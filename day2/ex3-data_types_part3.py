@@ -8,14 +8,15 @@ two_digit_number = input("Type a two digit number: ")
 #check type
 print(type(two_digit_number))
 
-#convert str to int
-conversion = int(two_digit_number)
-
 #obtain first + second ints
 first_digit = two_digit_number[0]
 second_digit = two_digit_number[1]
 
-print(first_digit + second_digit)
+#convert each var into integers
+result =  int(first_digit) + int(second_digit)
+print(type(result))
+
+print(result)
 
 
 
