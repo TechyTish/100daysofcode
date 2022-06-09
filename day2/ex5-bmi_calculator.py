@@ -5,6 +5,8 @@ weight = input("enter your weight in kg: ")
 
 #Write your code below this line 👇
 
+height_result = float(height)
+weight_result = int(weight)
 
 
 
