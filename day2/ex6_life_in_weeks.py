@@ -9,8 +9,6 @@ days = 365
 weeks = 52
 months = 12
 
-90 - 28 = 62
-
 #how many total days to live 90 years
 age_days = int((final_age - int(age)) * days)
 #how many total weeks to live 90 years
