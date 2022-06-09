@@ -5,10 +5,10 @@ weight = input("enter your weight in kg: ")
 
 #Write your code below this line 👇
 
-height_result = height ** 2
-weight_result = weight
+height_result = float(height) ** 2
+weight_result = int(weight)
 
-bmi_result = int(weight_result) / float(height_result)
+bmi_result = weight_result / height_result
 
 #convert bmi result to integer
 print(int (bmi_result))
