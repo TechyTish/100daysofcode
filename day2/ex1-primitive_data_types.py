@@ -8,3 +8,6 @@ print(123_456 + 334_923)
 #float
 print(3.14159)
 
+#boolean
+True
+False
