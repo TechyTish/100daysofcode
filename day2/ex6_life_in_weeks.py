@@ -10,13 +10,13 @@ weeks = 52
 months = 12
 
 #how many total days to live 90 years
-age_days = days * final_age / age
+age_days = days * final_age / int(age)
 
 #how many total weeks to live 90 years
-age_weeks = weeks * final_age / age
+age_weeks = weeks * final_age / int(age)
 
 #how many total months to live 90 years
-age_months = months * final_age / age
+age_months = months * final_age / int(age)
 
 print(f"you have {age_days} days, {age_weeks} weeks, and {age_months} months left until you are {final_age} years old.")
 
