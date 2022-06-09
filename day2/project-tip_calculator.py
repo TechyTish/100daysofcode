@@ -9,14 +9,11 @@
 
 print("Welcome to the tip calculator.")
 starting_bill = input("What was the total bill? £")
+starting_bill_float = float(starting_bill)
 
-#percentages of tip options
-percent_10 = 10
-percent_12 = 12
-percent_15 = 15
-
-percentage = input(f"What percentage tip would you like to give? {percent_10}, {percent_12} or {percent_15}? ")
-percentage = int((percentage / 100) * starting_bill)
+percentage = input(f"What percentage tip would you like to give? 10, 12 or 15? ")
+percentage_int = int(percentage)
+percentage_calc = ((percentage_int / 100) * starting_bill_float)
 
 split_no = input(int("How many people to split the bill? "))
 
