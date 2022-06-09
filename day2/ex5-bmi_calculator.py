@@ -20,4 +20,3 @@ print(int (bmi_result))
 
 
 
-
