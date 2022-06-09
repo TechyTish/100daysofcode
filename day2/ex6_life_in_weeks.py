@@ -5,13 +5,20 @@ age = input("What is your current age?")
 #Write your code below this line 👇
 
 final_age = 90
-days = 31
+days = 365
 weeks = 52
 months = 12
 
+#how many total days to live 90 years
+age_days = days * final_age / age
 
+#how many total weeks to live 90 years
+age_weeks = weeks * final_age / age
 
-print(f"you have {days} days, {weeks} weeks, and {408} months left until you are {final_age} years old.")
+#how many total months to live 90 years
+age_months = months * final_age / age
+
+print(f"you have {days} days, {weeks} weeks, and {months} months left until you are {final_age} years old.")
 
 
 
