@@ -11,11 +11,9 @@ weight = input("enter your weight in kg: ")
 height_result = float(height) ** 2
 weight_result = int(weight)
 
-bmi_result = round(weight_result / height_result) ** 0
+bmi_result = int(weight_result / height_result)
 
 bmi_category = ""
-
-print(f"your bmi is: {bmi_result}")
 
 if bmi_result < 18.5:
   bmi_category = "underweight"
@@ -32,5 +30,4 @@ if bmi_result > 30 < 35:
 if bmi_result > 35:
   bmi_category = "clinically obese"
 
-#convert bmi result to integer
 print(f"Your BMI is {bmi_result}, and you are {bmi_category}!")
