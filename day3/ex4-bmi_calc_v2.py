@@ -5,21 +5,29 @@ weight = input("enter your weight in kg: ")
 
 #Write your code below this line 👇
 
+#round height to 2 decimal places
 height_result = float(height) ** 2
 weight_result = int(weight)
 
-bmi_result = round(weight_result / height_result ** 2)
+#make result an integer
+bmi_result = int(weight_result / height_result)
 
+#create an empty string
 bmi_category = ""
 
+#if true
 if bmi_result < 18.5:
   bmi_category = "underweight"
+#else if between 18.5 and 25
 elif bmi_result < 25:
   bmi_category = "normal weight"
+#else if between 25 and 30
 elif bmi_result < 30:
   bmi_category = "slightly overweight"
+#else if between 30 and 35
 elif bmi_result < 35:
   bmi_category = "obese"
+#else if over 35
 else:
   bmi_category = "clinically obese"
 
