@@ -29,7 +29,6 @@ elif size == "M":
   final_bill += 20
 elif size == "L":
   final_bill += 25
-else:
   if add_pepperoni == "Y":
     final_bill += 3
   if extra_cheese == "Y":
