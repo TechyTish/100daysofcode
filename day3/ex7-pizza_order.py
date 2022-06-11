@@ -22,18 +22,17 @@ if size == "S":
   final_bill += 15
   if add_pepperoni == "Y":
     final_bill += 2
-  if extra_cheese == "Y":
-    final_bill += 1
-  print(f"Your bill for the pizza is: £{final_bill}")
 elif size == "M":
   final_bill += 20
-elif size == "L":
+  if add_pepperoni == "Y":
+    final_bill += 3
+else:
   final_bill += 25
   if add_pepperoni == "Y":
     final_bill += 3
-  if extra_cheese == "Y":
+if extra_cheese == "Y":
     final_bill += 1
-  print(f"Your bill for the pizza is: £{final_bill}")
+print(f"Your bill for the pizza is: £{final_bill}")
 
 
 
