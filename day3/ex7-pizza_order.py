@@ -20,18 +20,20 @@ final_bill = 0
 
 if size == "S":
   final_bill += 15
-  if add_pepperoni == "Y":
-    final_bill += 2
 elif size == "M":
   final_bill += 20
-  if add_pepperoni == "Y":
-    final_bill += 3
 else:
   final_bill += 25
-  if add_pepperoni == "Y":
+
+if add_pepperoni == "Y":
+  if size == "S":
+    final_bill += 2
+  else:
     final_bill += 3
+
 if extra_cheese == "Y":
-    final_bill += 1
+  final_bill +=1
+
 print(f"Your bill for the pizza is: £{final_bill}")
 
 
