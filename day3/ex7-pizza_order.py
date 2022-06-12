@@ -32,10 +32,6 @@ if add_pepperoni == "Y":
     final_bill += 3
 
 if extra_cheese == "Y":
-  final_bill +=1
+  final_bill += 1
 
 print(f"Your bill for the pizza is: £{final_bill}")
-
-
-
-
